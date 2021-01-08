@@ -110,6 +110,54 @@ strong{
 .body__banner img {
     width: 100%;
 }
+.banner__content{
+    padding: 50px 40px;
+    background-color: #fdfdfdf6;
+}
+
+.banner__content-header {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.banner__content-header h1 {
+    font-family: var(--font-base);
+}
+
+.banner__content-body {
+    padding-bottom: 20px;
+}
+
+.banner__animation{
+    height: 50px;
+    font-family: var(--font-base);
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    animation: pulse 1500ms infinite;
+    border-radius: 5px;
+}
+
+
+@keyframes pulse {
+    0% {
+        /* padding: 30px; */
+      background-color: #e66903;
+
+    }
+    50% {
+        background-color: #FF4136;
+        box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+    100% {
+        /* padding: 30px; */
+      background-color: #e66903;
+
+    }
+  }
+
 
 /* =======================
     
