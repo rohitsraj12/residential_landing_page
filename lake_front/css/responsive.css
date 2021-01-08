@@ -33,11 +33,20 @@
         margin-left: 30px;
     }
 
+    .body__banner {
+        position: relative;
+    }
+
+    .banner__content {
+        min-width: 450px;
+        position: absolute;
+        top: 120px;
+        left: 20px;
+    }
+
     .mobile__banner {
         display: none;
     }
-
-    
 
     .desktop__banner img {
         max-height: 100vh;
