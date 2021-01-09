@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -87,21 +88,215 @@
         <div class="body__container">
             <main>
                 <section class="section__overview" id="section-overview">
-                    <div class="wrap__overview py-5">
+                    <div class="wrap__overview py-5 container">
                         <article>
-                            <header>
+                            <header class="overview__header pb-3 text-center">
                                 <h1>
                                     Gopalan Lake Front 
                                 </h1>
 
                                 <h2>
-                                    Luxurious 1, 3 & 4 BHK Apartments @1.32 Cr
-                                    <strong class="location">
-                                        Whitefield
+                                    Luxurious 2 &amp; 3 BHK Apartments
+                                    <strong class="strong__location d-block">
+                                        Electronic City Phase I
                                     </strong>
                                 </h2>
                             </header>
+                            <div class="overview__body pb-3">
+                                <p>
+                                    Gopalan Lakefront brings you homes that reflect your personality. These well-designed 2 & 3 BHK flats for sale in Bangalore offer you homes for a premium living, superior finishes with various amenities.
+                                </p>
+                                <p>
+                                    Well-connected to the metro station, hospitals, IT companies and other major spots of the city, Gopalan Lakefront gives you cozy, soothing, yet luxurious spaces with facilities that simplify your life. Engage in making memories with these functional yet classy looking residential apartments.
+                                </p>
+                            </div>
+
+                            <footer class="overview__footer text-center">
+                                <button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Get In Touch</button>
+                            </footer>
                         </article>
+                    </div>
+                </section>
+                <!-- end section overview -->
+
+                <section class="section__offer py-5">
+                    <div class="wrap__offer container py-3">
+                        <div class="row">
+                            <article class="col-md-6 wrap__article">
+                                <header class="text-center">
+                                    Gopalan Lake Front 
+                                </header>
+                                <ul class="py-3">
+                                    <li>No GST</li>
+                                    <li>OC Received</li>
+                                    <li>Get PMAY Benefit Upto 2.7L*</li>
+                                    <li>Pocket Friendly EMI's</li>
+                                    <li>Easy Home Loans</li>
+                                </ul>
+                                <footer>
+                                    <button class="btn btn__primary">
+                                        Download Brochure
+                                    </button>
+                                </footer> 
+                            </article>
+                            <article class="col-md-6 wrap__article">
+                                <div class="offer__call">
+                                    <header class="offer__call-header">
+                                        FOR FULL OFFER DETAILS
+                                    </header>
+                                    <div class="offer__call-body">
+                                        <a href="tel:08049314931"><i class="fa fa-phone"></i>08049314931</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="offer__whatsApp">
+                                    <header class="offer__whatsApp-header mb-2">
+                                        GET FULL OFFER DETAILS
+                                    </header>
+                                    
+                                    <div class="offer__whatsApp-body">
+                                        <a class="wrap__whatsApp" href="https://api.whatsapp.com/send?phone=+919606038259&text=Hi!%20I%20am%20Interested%20In%20Goapalan%20Lakefront%20At%20Electonic%20City,%20Bengaluru.%20Please%20Share%20Details."><i class="fa fa-whatsapp"></i>+91 960 603 8259</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <!-- end section offer -->
+
+                <section class="section__configure py-5">
+                    <div class="wrap__configure">
+                        <article>
+                            <header class="configure__header pb-4 text-center">
+                                <h1>
+                                    Gopalan Lake Front Configuration
+                                </h1>
+                            </header>
+
+                            <div class="configure__body container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="configure__header">
+                                            <strong>
+                                                Gopalan Lake Front Residential
+                                                <span class="location">
+                                                    Electronic City Phase I
+                                                </span>
+                                            </strong>
+                                            <span class="ready">
+                                                ready to move-in
+                                            </span>
+                                            <figure>
+                                                <img class="img-fluid" src="img/gopalan_lake_front_offers.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <table class="table border-bottom">
+                                            <thead>
+                                              <tr class="bg-light">
+                                                <th scope="col">Type</th>
+                                                <th scope="col">Area (Sq.Ft)</th>
+                                                <th class="text-center" scope="col">Whatsapp</th>
+                                                <th scope="col" class="text-center">Price</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td scope="row">2 BHK</td>
+                                                <td>1305 sq ft</td>
+                                                <td class="text-center"><a class="table__whatsApp" href="https://api.whatsapp.com/send?phone=+919606038259&text=Hi!%20I%20am%20Interested%20In%20Goapalan%20Lakefront%20At%20Electonic%20City,%20Bengaluru.%20Please%20Share%20Details."><i class="fa fa-whatsapp"></i></a></td>
+                                                <td class="text-right"><button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Get Price Break-Up</button></td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">3 BHK</td>
+                                                <td>1565 sq ft</td>
+                                                <td class="text-center"><a class="table__whatsApp" href="https://api.whatsapp.com/send?phone=+919606038259&text=Hi!%20I%20am%20Interested%20In%20Goapalan%20Lakefront%20At%20Electonic%20City,%20Bengaluru.%20Please%20Share%20Details."><i class="fa fa-whatsapp"></i></a></td>
+                                                <td class="text-right"><button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Get Price Break-Up</button></td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">About</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="text-right"><button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Click Here</button></td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">Brochure</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="text-right"><button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Click Here</button></td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">Floorplan</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="text-right"><button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Click Here</button></td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">Masterplan</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="text-right"><button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Click Here</button></td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">Offer Brochure</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="text-right"><button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Click Here</button></td>
+                                              </tr>
+                                              <tr>
+                                                <td scope="row">Get Offer Brochure</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="text-right"><a class="table__whatsApp" href="https://api.whatsapp.com/send?phone=+919606038259&text=Hi!%20I%20am%20Interested%20In%20Goapalan%20Lakefront%20At%20Electonic%20City,%20Bengaluru.%20Please%20Share%20Details."><i class="fa fa-whatsapp"></i>whats app</a></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                          <div class="configure__footer text-center">
+                                            
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="configure__footer text-center">
+                                <div class="configure__top">
+                                    <p>Enquiry / Free Site Visit: <a class="table__whatsApp" href="https://api.whatsapp.com/send?phone=+919606038259&text=Hi!%20I%20am%20Interested%20In%20Goapalan%20Lakefront%20At%20Electonic%20City,%20Bengaluru.%20Please%20Share%20Details."><i class="fa fa-whatsapp"></i>+91 9606038259</a></p>
+                                    <p>
+                                        RERA NO :/PR/KN/170812/001274
+                                    </p>
+                                </div>
+                                <button class="btn btn__primary" data-toggle="modal" data-target="#enquirenow">Free Site Visit</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- end section configure -->
+
+                <section class="section__menity">
+                    <div class="wrap__amenity">
+                        <header class="amenity__header pb-3 text-center">
+                            <h1>
+                                Amenities
+                            </h1>
+                        </header>
+
+                        <div class="amenity__body">
+                            <div class="row text-center">
+                                <div class="col-6 col-sm-4 col-md-2">a</div>
+                                <div class="col-6 col-sm-4 col-md-2">ds</div>
+                                <div class="col-6 col-sm-4 col-md-2">d</div>
+                                <div class="col-6 col-sm-4 col-md-2">f</div>
+                                <div class="col-6 col-sm-4 col-md-2">g</div>
+                                <div class="col-6 col-sm-4 col-md-2">h</div>
+                                <div class="col-6 col-sm-4 col-md-2">j</div>
+                                <div class="col-6 col-sm-4 col-md-2">k</div>
+                                <div class="col-6 col-sm-4 col-md-2">5</div>
+                                <div class="col-6 col-sm-4 col-md-2">e</div>
+                                <div class="col-6 col-sm-4 col-md-2">re</div>
+                                <div class="col-6 col-sm-4 col-md-2">re</div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -114,11 +309,59 @@
             </footer>
         </div>
         <!-- end body footer -->
+
+        
+        <!-- Enquiry Now modal starts-->
+        <div class="modal fade" id="enquirenow" abindex="-1" role="dialog" aria-labelledby="enquirenow" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Get In Touch
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" class="signin px-3" action="form_one.php" id="query_form_enquiry">
+                            <input type="hidden" id="name_enquiry" name="name_enquiry">
+                            <div class="form-group groupmaterial">
+                                <label for="forname">Name</label>
+                                <input type="text" class="form-control" id="forname" aria-describedby="emailHelp" placeholder="" name="name"  required="required">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="form-group groupmaterial">
+                                <label for="forname">Email</label>
+                                <input type="email" class="form-control" id="forname" aria-describedby="emailHelp" placeholder="" name="email"  required="required">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="form-group groupmaterial">
+                                <label for="forname">Mobile Number</label>
+                                <input type="tel" class="form-control" id="forname" aria-describedby="emailHelp" placeholder="" name="phone"  required="required">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="form-group text-right">
+                                <button type="submit" name="btnsubmit" class="btn btn__primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- Enquiry Now modal ends-->
+        
     </div>
     <!-- end body wrap -->
 
     <!-- script -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
