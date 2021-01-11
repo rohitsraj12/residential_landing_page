@@ -60,6 +60,10 @@
     .section__offer footer {
     text-align: center;
     }
+
+    .mobile__gallery {
+        display: none;
+    }
 }
 
 @media(max-width: 768px){
@@ -67,6 +71,18 @@
         position: absolute;
         top: 30px;
         right: 2%;
+    }
+
+    .header__nav {
+        padding: 4px 0;
+        text-align: center;
+    }
+
+    .nav__link {
+        display: block;
+        background-color: #e8e8e8;
+        margin-bottom: 1px;
+        padding: 4px 0;
     }
 
     .desktop__banner {
@@ -79,5 +95,13 @@
 
     .wrap__offer .wrap__article { 
         margin: 0 auto;
+    }
+
+    .desktop__gallery {
+        display: none;
+    }
+
+    .amenity__name {
+        padding-bottom: 40px;
     }
 }
