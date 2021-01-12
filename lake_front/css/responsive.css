@@ -73,9 +73,14 @@
         right: 2%;
     }
 
+    .header__brand {
+        padding: 10px 0;
+    }
+
     .header__nav {
         padding: 4px 0;
         text-align: center;
+        display: none;
     }
 
     .nav__link {
