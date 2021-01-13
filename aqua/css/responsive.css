@@ -73,6 +73,10 @@
     .mobile__gallery {
         display: none;
     }
+
+    .section__fixed {
+        display:none;
+    }
 }
 
 @media(max-width: 768px){
@@ -117,5 +121,37 @@
 
     .amenity__name {
         padding-bottom: 40px;
+    }
+
+    .body__footer {
+        padding-bottom: 40px;
+    }
+    
+
+    .section__fixed {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .section__fixed ul {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section__fixed ul li{
+        width: 50%;
+        background-color:  #11132c;
+    }
+
+    .section__fixed ul li:first-child {
+        border-right: 1px solid #5c5c5c;
+    }
+
+    .section__fixed ul li a {
+        display: block;
+        padding: 10px 0;
+        color: #fff;
     }
 }
