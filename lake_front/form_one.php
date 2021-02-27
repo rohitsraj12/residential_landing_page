@@ -31,6 +31,32 @@ if (isset($_POST['email'])) {
     //print_r(json_decode($result, 1));
     //die;
 
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+
+        // $to = 'webdesigner@gopalanenterprises.com';
+        $to1 = "dmmarketing@gopalanenterprises.com";
+        $to2 = "manash@gopalanenterprises.com"; 
+        $subject = "Enquiry From Lake Front Landing Page";
+        $message = "<h4>Lake Front Landing page</h4></br>";
+        $message .= "<p>name: <strong>". $name ."</strong></p></br>";
+        $message .= "<p>email: <strong>". $email ."</strong></p></br>";
+        $message .= "<p>phone number: <strong>". $phone ."</strong></p></br>";
+        $message .= "<p>Thank you,</p>";
+        $message .= "<p>". $name ."</p>";
+        $message .= "<p>" . $email . " | " . $phone . "</p>";
+        
+        $headers = "From:" . $name . " <" . $email . ">\r\n";
+        $headers .= "Reply-To: " . $email . "\r\n";
+        $headers .= "Content-type: text/html\r\n";
+
+        // mail($to, $subject, $message, $headers);
+        mail($to1, $subject, $message, $headers);
+        mail($to2, $subject, $message, $headers);
+
+
+
     if ($result)
     header('Location:thank-you.html');
     
