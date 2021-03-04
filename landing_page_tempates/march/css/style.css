@@ -259,11 +259,36 @@ html {
 ================================== */
 .icon__block {
   border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  min-height: 180px;
   padding: 20px;
   text-align: center;
   background-image: url('../img/svg/bg_icon.svg');
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+.icon__block:hover {
+  /* border: 1px solid var(--color-theme); */
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+  background-color: #fff8f8;
+
 }
 
 .amenity__svg {
@@ -271,8 +296,13 @@ html {
   fill: var(--color-theme);
 }
 
+.icon__block header {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 .carousel-wrap {
-  margin: 30px auto;
+  margin: 10px auto;
   padding: 0 5%;
   width: 80%;
   position: relative;
