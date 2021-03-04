@@ -226,6 +226,52 @@ html {
   background-image: url('../img/bg/footer_bg.jpg');
 }
 
+.body__footer a {
+  color: var(--color-theme);
+}
+.footer__header {
+  padding-bottom: 10px;
+  font-weight: 500;
+  color: rgb(231, 231, 231);
+  font-family: var(--font-base);
+  font-size: 1.3rem;
+}
+
+.copy__right {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 0 0;
+  border-top: 1px solid rgb(66, 66, 66);
+}
+
+.qr {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.qr img {
+  width: 50px;
+}
+
+.qr__list header {
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: rgb(231, 231, 231);
+}
+
+.contact__direct i{
+  width: 25px;
+  display: inline-block;
+  color: #a8a8a8;
+  font-size: 1rem;
+}
+
+.contact__direct li:last-child i {
+  font-size: 1.6rem;
+
+}
+
 /* ===============================
 
     body banner section 
@@ -363,6 +409,39 @@ html {
   color: #cdcbcd;
 }
 
+/* section gallery
+==================================*/
+.section__gallery {
+  background-color: rgb(247, 247, 247);
+}
+.article__gallery-block {
+  position: relative;
+  display: block;
+}
+
+.gallery__header {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  background-color: rgba(0, 0, 0, 0.705);
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--color-white);
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0px;
+  backdrop-filter: blur(3px);
+  margin: 0;
+}
+
+.gallery__img {
+  width: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
 
 /* section testimonial
 ================================== */
