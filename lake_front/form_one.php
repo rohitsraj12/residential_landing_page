@@ -37,7 +37,7 @@ if (isset($_POST['email'])) {
 
         // $to = 'webdesigner@gopalanenterprises.com';
         $to1 = "dmmarketing@gopalanenterprises.com";
-        $to2 = "manash@gopalanenterprises.com"; 
+        $to2 = "presales@gopalanenterprises.com"; 
         $subject = "Enquiry From Lake Front Landing Page";
         $message = "<h4>Lake Front Landing page</h4></br>";
         $message .= "<p>name: <strong>". $name ."</strong></p></br>";
