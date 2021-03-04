@@ -480,15 +480,16 @@ strong{
     #body footer
     
 ===========================*/
-.body__footer a {
-    color: rgb(255, 126, 41);
-}
+
 
 .body__footer {
     background-color: rgb(26, 26, 26);
     color: rgb(189, 189, 189);
 }
 
+.body__footer a {
+    color: rgb(255, 126, 41);
+}
 .footer__header {
     padding-bottom: 10px;
     font-weight: 500;
