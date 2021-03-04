@@ -16,7 +16,7 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         responsive: {
           0: {
-            items: 1
+            items: 2
           },
           600: {
             items: 3
@@ -29,4 +29,14 @@ $(document).ready(function(){
           }
         }
     })
+
+    function switchStyle() {
+      if (document.getElementById('styleSwitch').checked) {
+        document.getElementById('gallery').classList.add("custom");
+        document.getElementById('exampleModal').classList.add("custom");
+      } else {
+        document.getElementById('gallery').classList.remove("custom");
+        document.getElementById('exampleModal').classList.remove("custom");
+      }
+    }
 })
