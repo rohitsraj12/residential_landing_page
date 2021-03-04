@@ -11,6 +11,8 @@ if (isset($_POST['email'])) {
         - Gopalan Olympia
         - Gopalan Sanskriti
     */ 
+
+    
     $input = array(
         'f_name' => $_POST['name'],
         'email' => $_POST['email'],
