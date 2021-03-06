@@ -1,0 +1,137 @@
+
+:root {
+    --color-white: #ffffff;
+    --color-dark: #212529;
+    --color-theme: #c43d2e;
+  
+    --nav-color-1: #0a2233;
+    --nav-color-1-hover:#c43d2e;
+  
+    --btn-bg: #c43d2e;
+    --btn-bg-hover: #0a2233;
+  
+  
+    --font-primary: "Rubik", sans-serif;
+  }
+
+/* large screen */
+@media(min-width: 1024px){
+    
+    .wrap__container {
+        width: 75%;
+      }
+
+      .fixed__contact {
+          display: none;
+      }
+}
+
+/* large screen */
+@media(min-width: 769px){
+    
+    .wrap__container {
+        width: 80%;
+    }
+
+    .wrap__section {
+        padding: 100px 0;
+    }
+
+    .hamberger {
+        display: none;
+    }
+    
+
+    /* ===============================
+
+        body header section 
+        
+    ================================*/
+    .body__header {
+        padding: 15px 0;
+    }
+
+    .body__header .wrap__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .header__nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav__list + li {
+        margin-left: 30px;
+    }
+
+    .body__banner img{
+        height: 100vh;
+    }
+
+    .banne__image-sm {
+        display: none;
+    }
+
+    .small__screen {
+        display: none;
+    }
+}
+
+/* large small screen */
+@media(max-width: 768px){
+    .body__header {
+        padding: 10px 0;
+    }
+
+    .wrap__container {
+        width: 96%;
+    }
+
+    .wrap__section {
+        padding: 60px 0;
+    }
+
+    .hamberger {
+        position: absolute;
+        top: 35px;
+        right: 20px
+    }
+
+    .hamberger i {
+        font-size: 24px;
+        color:var(--btn-bg-hover);
+    }
+
+    .banner__image-lg{
+        display: none;
+    }
+
+    .header__nav {
+        padding-top: 10px;
+        display: none;
+    }
+
+    .nav__list {
+        text-align: center;
+        margin: 2px 0;
+        padding: 5px 0;
+        background-color: rgba(182, 182, 182, 0.178);
+    }
+    
+    .large__screen {
+        display: none;
+    }
+
+}
+
+/* medium screen min and max */
+@media(min-width: 574px) and (max-width: 768px){
+    
+  .wrap__container {
+    width: 90%;
+  }
+
+}
