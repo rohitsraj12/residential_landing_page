@@ -24,6 +24,19 @@ if(isset($_POST['submit_contact'])){
 
     mail($to, $subject, $message, $headers);
 
-    header("location:thank-you.html");
+    header("location:https://www.gopalanenterprises.com/brochure/gopalan-florenza-e-brochure.pdf");
 }
 ?>
+
+<!-- 
+
+    florenza
+    https://www.gopalanenterprises.com/brochure/gopalan-florenza-e-brochure.pdf
+
+    olympia
+    https://www.gopalanenterprises.com/brochure/gopalan-olympia-e-brochure.pdf 
+
+    sanskriti
+    https://www.gopalanenterprises.com/brochure/gopalan-sanskriti-e-brochure.pdf
+
+-->
