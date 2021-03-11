@@ -124,6 +124,15 @@
     .large__screen {
         display: none;
     }
+    
+
+.banner__container {
+    bottom: 2%;
+  }
+
+    .banner__container .wrap__banner {
+        align-items: flex-end;
+    }
 
 }
 
