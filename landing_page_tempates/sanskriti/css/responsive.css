@@ -74,6 +74,10 @@
     .banne__image-sm {
         display: none;
     }
+
+    .small__screen {
+        display: none;
+    }
 }
 
 /* large small screen */
@@ -115,6 +119,10 @@
         margin: 2px 0;
         padding: 5px 0;
         background-color: rgba(182, 182, 182, 0.178);
+    }
+    
+    .large__screen {
+        display: none;
     }
 
 }
