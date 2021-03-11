@@ -10,7 +10,7 @@ if(isset($_POST['submit_contact'])){
     // email to in house
     $to = "webdesigner@gopalanenterprises.com";
     $to2 = "seo@gopalanenterprises.com";
-    $subject = "Contact Us Form | Gopalan Florenza Landing Page";
+    $subject = "Contact Us Form | Gopalan Sanskriti Landing Page";
     $message = "<p>Enquiry</p></br>";
     $message .= "<p> name: <strong>". $user_name ."</strong></p></br>";
     $message .= "<p> phone number: <strong>". $user_phone ."</strong></p></br>";
