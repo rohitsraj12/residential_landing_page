@@ -1,5 +1,5 @@
-<?php
 
+<?php
     $msg = '';
     if (isset($_POST['email'])) {
 
@@ -12,8 +12,7 @@
             - Gopalan Olympia
             - Gopalan Sanskriti
         */ 
-
-        $input = array (
+        $input = array(
             'f_name' => $_POST['name'],
             'email' => $_POST['email'],
             'phonefax' => $_POST['phone'],
@@ -22,46 +21,41 @@
             'channel_id' => 'Google Display Ads',
             'rep_id' => 'gopalanadmin',
             'projects' => 'Gopalan Aqua',
-            // 'f_name' => 'Donald',
-            // 'l_name' => 'Joe',
-            // 'email' => 'donaldjoe@gmail.com',
-            // 'phonefax' => '9986857414',
             'alert_client' => 0,
             'alert_rep' => 0
         );
 
-
-        $url = 'https://cloud.paramantra.com/paramantra/api/data/new/format/json';
-        $api_key='EZ8aqfk2jzm';
-        $app_name='gopalanapi';
+        $url = "https://cloud.paramantra.com/paramantra/api/data/new/format/json";
+        $apikey = 'EZ8aqfk2jzm';
+        $action = 'gopalanapi';
 
         $result = api_exe($url, $apikey, $action, $input);
         //print_r(json_decode($result, 1));
         //die;
 
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
 
-        $to = 'webdesigner@gopalanenterprises.com';
-        $to1 = "dmmarketing@gopalanenterprises.com";
-        $to2 = "presales@gopalanenterprises.com";
-        $subject = "Enquiry From Aqua Landing Page | google display ads";
-        $message = "<h4>Aqua Landing page, google display ads</h4></br>";
-        $message .= "<p>name: <strong>". $name ."</strong></p></br>";
-        $message .= "<p>email: <strong>". $email ."</strong></p></br>";
-        $message .= "<p>phone number: <strong>". $phone ."</strong></p></br>";
-        $message .= "<p>Thank you,</p>";
-        $message .= "<p>". $name ."</p>";
-        $message .= "<p>" . $email . " | " . $phone . "</p>";
-        
-        $headers = "From:" . $name . " <" . $email . ">\r\n";
-        $headers .= "Reply-To: " . $email . "\r\n";
-        $headers .= "Content-type: text/html\r\n";
+            $to = 'webdesigner@gopalanenterprises.com';
+            $to1 = "dmmarketing@gopalanenterprises.com";
+            $to2 = "presales@gopalanenterprises.com"; 
+            $subject = "Enquiry From Aqua Landing Page | Google Display Ads";
+            $message = "<h4>Aqua Landing page, Google Display Ads</h4></br>";
+            $message .= "<p>name: <strong>". $name ."</strong></p></br>";
+            $message .= "<p>email: <strong>". $email ."</strong></p></br>";
+            $message .= "<p>phone number: <strong>". $phone ."</strong></p></br>";
+            $message .= "<p>Thank you,</p>";
+            $message .= "<p>". $name ."</p>";
+            $message .= "<p>" . $email . " | " . $phone . "</p>";
+            
+            $headers = "From:" . $name . " <" . $email . ">\r\n";
+            $headers .= "Reply-To: " . $email . "\r\n";
+            $headers .= "Content-type: text/html\r\n";
 
-        mail($to, $subject, $message, $headers);
-        mail($to1, $subject, $message, $headers);
-        mail($to2, $subject, $message, $headers);
+            mail($to, $subject, $message, $headers);
+            mail($to1, $subject, $message, $headers);
+            mail($to2, $subject, $message, $headers);
 
 
 
@@ -88,9 +82,9 @@
         $data = curl_exec($ch);
         curl_close($ch);
         /*
-          echo "<br />" . $data;
-          die;
-         */
+        echo "<br />" . $data;
+        die;
+        */
         return $data;
     }
 ?>
