@@ -182,7 +182,16 @@ html {
   }
 
   .whatsapp{
-    color: green;
+    color: rgb(0, 136, 0);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+  .whatsapp:hover{
+    color: rgb(125, 247, 125);
   }
 
   .section__enquiry .a {
@@ -237,6 +246,8 @@ html {
     background-color: #ffffff86;
     border-bottom: 1px solid #c5c5c5;
     backdrop-filter: blur(2px);
+    top: 0;
+    z-index: 99;
 }
 
 .nav__link {
@@ -354,6 +365,39 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
 ================================*/
 .body__banner img{
     width: 100%;
+}
+
+.body__banner {
+  position: relative;
+}
+
+.banner__container {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+
+.banner__container .wrap__banner {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__container section{
+  padding: 60px 100px;
+  background-color: rgba(0, 0, 0, 0.719);
+}
+
+.banner__container h2, .banner__container h4 {
+  color: #fff;
+}
+
+.banner__container footer {
+  text-align: center;
 }
 
 /* ===============================
